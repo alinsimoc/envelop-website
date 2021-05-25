@@ -18,9 +18,7 @@ export function getRoutes(): IRoutes {
     folderPattern: 'docs',
     basePath: 'docs',
     basePathLabel: 'Documentation',
-    labels: {
-      index: 'Docs',
-    },
+    labels: {},
   });
 
   return Routes;
