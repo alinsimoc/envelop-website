@@ -1,3 +1,5 @@
+/* TODO: Perform a cleanup and delete unnecessary styling */
+
 :root {
   --ra-admonition-background-color: var(--ifm-alert-background-color);
   --ra-admonition-border-width: var(--ifm-alert-border-width);
@@ -352,7 +354,7 @@
 * {
   box-sizing: border-box;
 }
-html {
+/* html {
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
   background-color: var(--ifm-background-color);
@@ -443,7 +445,7 @@ img[align='right'] {
 }
 img[align='left'] {
   padding-right: var(--image-alignment-padding);
-}
+} */
 .markdown {
   --ifm-h1-vertical-rhythm-top: 3;
   --ifm-h2-vertical-rhythm-top: 2;
@@ -503,7 +505,7 @@ img[align='left'] {
 .markdown li + li {
   margin-top: var(--ifm-list-item-margin);
 }
-ol,
+/* ol,
 ul {
   margin: 0 0 var(--ifm-list-margin);
   padding-left: var(--ifm-list-left-padding);
@@ -595,7 +597,7 @@ hr:before {
 }
 hr:after {
   clear: both;
-}
+} */
 .alert {
   background-color: var(--ifm-alert-background-color);
   border: var(--ifm-alert-border-width) solid var(--ifm-alert-border-color);
@@ -1710,7 +1712,7 @@ hr:after {
 .thin-scrollbar::-webkit-scrollbar-thumb:hover {
   background: var(--ifm-scrollbar-thumb-hover-background-color);
 }
-html[data-theme='dark'] {
+/* html[data-theme='dark'] {
   --ifm-color-emphasis-0: var(--ifm-color-gray-1000);
   --ifm-color-emphasis-100: var(--ifm-color-gray-900);
   --ifm-color-emphasis-200: var(--ifm-color-gray-800);
@@ -1739,7 +1741,7 @@ html[data-theme='dark'] {
   h1 {
     --ifm-h1-font-size: calc(1.375rem + 1.5vw);
   }
-}
+} */
 @media (max-width: 996px) {
   .row .col.col.col {
     --ifm-col-width: 100%;
@@ -1831,13 +1833,13 @@ html[data-theme='dark'] {
 .admonition a {
   color: #000;
 }
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace;
-}
+} */
 .menu button {
   margin-bottom: 70px;
 }
-button {
+/* button {
   outline: none;
 }
 
@@ -1846,7 +1848,7 @@ button[class^='copyButton'] {
 }
 body {
   font-family: Montserrat, sans-serif;
-}
+} */
 .navbar {
   font-size: 12px;
 }
@@ -1936,7 +1938,7 @@ body {
 .react-toggle:active:not(.react-toggle--disabled) .react-toggle-thumb {
   box-shadow: 0 0 5px 5px var(--ifm-color-primary);
 }
-
+/* 
 body:not(.navigation-with-keyboard) :not(input):focus {
   outline: none;
 }
@@ -1947,7 +1949,7 @@ html {
 body {
   margin: 0;
   transition: var(--ifm-transition-fast) ease color;
-}
+} */
 
 :root {
   --collapse-button-bg-color-dark: #2e333a;

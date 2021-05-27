@@ -8,6 +8,7 @@ import { ReactNode, useMemo, useState } from 'react';
 import { Footer, GlobalStyles, Header, SearchBar, Subheader } from 'the-guild-components';
 
 import { ChakraProvider, extendTheme, theme as chakraTheme } from '@chakra-ui/react';
+
 import {
   DocsContainer,
   DocsNavigation,
@@ -21,6 +22,8 @@ import {
 } from '@guild-docs/client';
 
 import type { AppProps } from 'next/app';
+
+import { handleRoute } from '../../next-helpers';
 
 export function ChakraThemeProvider({ children }: { children: ReactNode }) {
   return <ChakraProvider theme={theme}>{children}</ChakraProvider>;
@@ -63,32 +66,48 @@ function App({ Component, pageProps, router }: AppProps) {
       <GlobalStyles />
       <Header accentColor={accentColor} activeLink="/open-source" />
       <Subheader
-        router={router}
         activeLink={router.asPath}
         product={{
-          title: 'Docs',
+          title: 'Envelop',
           description: 'Lorem ipsum dolor sit amet',
           image: {
-            src: '/assets/subheader-logo.svg',
-            alt: 'Docs',
+            src: 'https://the-guild.dev/static/shared-logos/products/envelop.svg',
+            alt: 'Envelop Logo',
           },
+          onClick: e => handleRoute('/', e, router),
         }}
         links={[
           {
-            label: 'Home',
-            title: 'Read about Envelop',
+            children: 'Home',
             href: '/',
+            title: 'The Guild Envelop',
+            onClick: e => handleRoute('/', e, router),
           },
           {
-            label: 'Docs',
-            title: 'View examples',
+            children: 'Marketplace',
+            href: '/marketplace',
+            title: 'Browse the Marketplace',
+            onClick: e => handleRoute('/marketplace', e, router),
+          },
+          {
+            children: 'API & Docs',
             href: '/docs',
+            title: 'Read more about Envelop',
+            onClick: e => handleRoute('/docs', e, router),
+          },
+          {
+            children: 'GitHub',
+            href: 'https://github.com/dotansimha/envelop',
+            target: '_blank',
+            rel: 'noopener norefereer',
+            title: "Head to the project's GitHub",
           },
         ]}
         cta={{
-          label: 'Get Started',
-          title: 'Start using Envelop',
+          children: 'Get Started',
           href: '/docs',
+          title: 'Start using Envelop',
+          onClick: e => handleRoute('/docs', e, router),
         }}
       />
 
