@@ -1,27 +1,38 @@
 {
   "private": true,
-  "author": "Dotan Simha <dotansimha@gmail.com>",
   "license": "MIT",
+  "author": "Dotan Simha <dotansimha@gmail.com>",
   "workspaces": [
     "./packages/*",
     "./packages/plugins/*",
     "./examples/*"
   ],
   "scripts": {
-    "prepare": "husky install",
     "benchmark": "NODE_ENV=production ts-node --project tsconfig.benchmark.json benchmark/execute.case.ts",
+    "build": "rimraf packages/*/lib packages/plugins/*/lib && bob-esbuild tsc && pnpm prepack -r",
     "postinstall": "patch-package",
     "lint": "eslint --config .eslintrc.json --ext .ts .",
-    "prebuild": "rimraf packages/*/dist",
-    "build": "bob-esbuild tsc && pnpm prepack -r",
-    "test": "jest",
-    "test:ci": "jest --coverage",
-    "prerelease": "yarn build",
+    "prepare": "husky install",
+    "prettier": "prettier --ignore-path .gitignore --write --list-different \"**/*.{ts,tsx,graphql,yml}\"",
+    "prerelease": "pnpm build",
     "release": "changeset publish",
-    "release:canary": "(node scripts/canary-release.js && yarn build && yarn changeset publish --tag alpha) || echo Skipping Canary...",
-    "prettier": "prettier --ignore-path .gitignore --write --list-different \"**/*.{ts,tsx,graphql,yml}\""
+    "release:canary": "(node scripts/canary-release.js && pnpm build && pnpm changeset publish --tag alpha) || echo Skipping Canary...",
+    "test": "jest",
+    "test:ci": "jest --coverage"
+  },
+  "lint-staged": {
+    "**/*.json": [
+      "prettier --write"
+    ],
+    "**/*.{ts,tsx,graphql,yml}": [
+      "prettier --write"
+    ],
+    "packages/**/src/**/*.{ts,tsx}": [
+      "eslint --fix"
+    ]
   },
   "devDependencies": {
+    "@changesets/apply-release-plan": "^5.0.0",
     "@changesets/cli": "2.16.0",
     "@graphql-tools/schema": "7.1.5",
     "@types/benchmark": "2.1.0",
@@ -31,6 +42,7 @@
     "@typescript-eslint/parser": "4.25.0",
     "apollo-server": "2.25.0",
     "benchmark": "2.1.4",
+    "bob-esbuild": "^0.1.10",
     "bob-esbuild-cli": "^0.1.13",
     "eslint": "7.27.0",
     "eslint-config-prettier": "8.3.0",
@@ -47,26 +59,16 @@
     "rimraf": "3.0.2",
     "ts-jest": "27.0.1",
     "ts-node": "10.0.0",
+    "tslib": "^2.2.0",
     "typescript": "4.3.2"
   },
-  "resolutions": {
-    "@changesets/git": "1.1.1",
-    "prettier": "2.3.0"
+  "engines": {
+    "pnpm": ">=6.6.1"
   },
-  "lint-staged": {
-    "packages/**/src/**/*.{ts,tsx}": [
-      "eslint --fix"
-    ],
-    "**/*.{ts,tsx,graphql,yml}": [
-      "prettier --write"
-    ],
-    "**/*.json": [
-      "prettier --write"
-    ]
-  },
-  "dependencies": {
-    "@changesets/apply-release-plan": "^5.0.0",
-    "bob-esbuild": "^0.1.10",
-    "tslib": "^2.2.0"
+  "pnpm": {
+    "overrides": {
+      "@changesets/git": "1.1.1",
+      "prettier": "2.3.0"
+    }
   }
 }
