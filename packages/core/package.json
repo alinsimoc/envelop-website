@@ -18,15 +18,25 @@
     "nodejs",
     "typescript"
   ],
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
-  "typings": "dist/index.d.ts",
+  "main": "lib/index.js",
+  "module": "lib/index.mjs",
+  "typings": "lib/index.d.ts",
   "typescript": {
-    "definition": "dist/index.d.ts"
+    "definition": "lib/index.d.ts"
+  },
+  "exports": {
+    ".": {
+      "require": "./lib/index.js",
+      "import": "./lib/index.mjs"
+    },
+    "./*": {
+      "require": "./*.js",
+      "import": "./*.mjs"
+    }
   },
   "scripts": {
     "test": "jest",
-    "prepare": "bob-esbuild build"
+    "prepack": "bob-esbuild build"
   },
   "dependencies": {
     "@envelop/types": "0.1.4"
