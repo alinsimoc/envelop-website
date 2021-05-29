@@ -39,7 +39,7 @@
     "prepack": "bob-esbuild build"
   },
   "dependencies": {
-    "@envelop/types": "0.1.4"
+    "@envelop/types": "workspace:0.1.4"
   },
   "devDependencies": {
     "@graphql-tools/schema": "7.1.5",
