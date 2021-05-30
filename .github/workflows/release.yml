@@ -31,9 +31,6 @@ jobs:
         run: echo "//registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN" >> ~/.npmrc
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
-      - name: Get yarn cache
-        id: yarn-cache
-        run: echo "::set-output name=dir::$(yarn cache dir)"
       - name: Cache pnpm modules
         uses: actions/cache@v2
         env:
@@ -47,11 +44,14 @@ jobs:
         run: npm i pnpm@^6.6.1 -g
       - name: Install Dependencies
         run: pnpm i
+      - name: Build everything
+        run: pnpm build
       - name: Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@master
         with:
-          publish: pnpm release
+          publish: pnpm ci:release
+          version: pnpm ci:version
           commit: 'chore(release): update monorepo packages versions'
           title: 'Upcoming Release Changes'
         env:
