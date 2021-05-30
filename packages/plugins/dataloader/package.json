@@ -30,7 +30,7 @@
     "prepack": "bob-esbuild build"
   },
   "devDependencies": {
-    "bob-esbuild-cli": "^0.1.14",
+    "bob-esbuild-cli": "^0.1.15",
     "dataloader": "2.0.0",
     "graphql": "15.5.0",
     "reflect-metadata": "0.1.13",

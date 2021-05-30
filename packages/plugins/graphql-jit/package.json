@@ -34,7 +34,7 @@
     "tiny-lru": "7.0.6"
   },
   "devDependencies": {
-    "bob-esbuild-cli": "^0.1.14",
+    "bob-esbuild-cli": "^0.1.15",
     "graphql": "15.5.0",
     "graphql-jit": "0.5.1",
     "reflect-metadata": "0.1.13",

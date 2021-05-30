@@ -18,8 +18,8 @@ importers:
       '@typescript-eslint/parser': 4.25.0
       apollo-server: 2.25.0
       benchmark: 2.1.4
-      bob-esbuild: ^0.1.11
-      bob-esbuild-cli: ^0.1.14
+      bob-esbuild: ^0.1.12
+      bob-esbuild-cli: ^0.1.15
       eslint: 7.27.0
       eslint-config-prettier: 8.3.0
       eslint-config-standard: 16.0.3
@@ -48,8 +48,8 @@ importers:
       '@typescript-eslint/parser': 4.25.0_eslint@7.27.0+typescript@4.3.2
       apollo-server: 2.25.0
       benchmark: 2.1.4
-      bob-esbuild: 0.1.11_b89ec6c4eb73802631cbe54606dd8cdb
-      bob-esbuild-cli: 0.1.14_b89ec6c4eb73802631cbe54606dd8cdb
+      bob-esbuild: 0.1.12_b89ec6c4eb73802631cbe54606dd8cdb
+      bob-esbuild-cli: 0.1.15_b89ec6c4eb73802631cbe54606dd8cdb
       eslint: 7.27.0
       eslint-config-prettier: 8.3.0_eslint@7.27.0
       eslint-config-standard: 16.0.3_19ef4a5f4e72864a1e4b44b84fa6c886
@@ -145,7 +145,7 @@ importers:
       '@envelop/types': workspace:0.1.4
       '@graphql-tools/schema': 7.1.5
       '@graphql-tools/utils': 7.10.0
-      bob-esbuild-cli: ^0.1.14
+      bob-esbuild-cli: ^0.1.15
       graphql: 15.5.0
       typescript: 4.3.2
     dependencies:
@@ -153,7 +153,7 @@ importers:
     devDependencies:
       '@graphql-tools/schema': 7.1.5_graphql@15.5.0
       '@graphql-tools/utils': 7.10.0_graphql@15.5.0
-      bob-esbuild-cli: 0.1.14_typescript@4.3.2
+      bob-esbuild-cli: 0.1.15_typescript@4.3.2
       graphql: 15.5.0
       typescript: 4.3.2
 
@@ -161,21 +161,21 @@ importers:
     specifiers:
       '@graphql-tools/schema': 7.1.5
       apollo-tracing: ^0.15.0
-      bob-esbuild-cli: ^0.1.14
+      bob-esbuild-cli: ^0.1.15
       graphql: 15.5.0
       typescript: 4.3.2
     dependencies:
       apollo-tracing: 0.15.0_graphql@15.5.0
     devDependencies:
       '@graphql-tools/schema': 7.1.5_graphql@15.5.0
-      bob-esbuild-cli: 0.1.14_typescript@4.3.2
+      bob-esbuild-cli: 0.1.15_typescript@4.3.2
       graphql: 15.5.0
       typescript: 4.3.2
 
   packages/plugins/auth0:
     specifiers:
       '@types/jsonwebtoken': 8.5.1
-      bob-esbuild-cli: ^0.1.14
+      bob-esbuild-cli: ^0.1.15
       graphql: 15.5.0
       jsonwebtoken: ^8.5.1
       jwks-rsa: ^2.0.3
@@ -185,19 +185,19 @@ importers:
       jwks-rsa: 2.0.3
     devDependencies:
       '@types/jsonwebtoken': 8.5.1
-      bob-esbuild-cli: 0.1.14_typescript@4.3.2
+      bob-esbuild-cli: 0.1.15_typescript@4.3.2
       graphql: 15.5.0
       typescript: 4.3.2
 
   packages/plugins/dataloader:
     specifiers:
-      bob-esbuild-cli: ^0.1.14
+      bob-esbuild-cli: ^0.1.15
       dataloader: 2.0.0
       graphql: 15.5.0
       reflect-metadata: 0.1.13
       typescript: 4.3.2
     devDependencies:
-      bob-esbuild-cli: 0.1.14_typescript@4.3.2
+      bob-esbuild-cli: 0.1.15_typescript@4.3.2
       dataloader: 2.0.0
       graphql: 15.5.0
       reflect-metadata: 0.1.13
@@ -206,7 +206,7 @@ importers:
   packages/plugins/depth-limit:
     specifiers:
       '@types/graphql-depth-limit': 1.1.2
-      bob-esbuild-cli: ^0.1.14
+      bob-esbuild-cli: ^0.1.15
       graphql: 15.5.0
       graphql-depth-limit: ^1.1.0
       typescript: 4.3.2
@@ -214,53 +214,53 @@ importers:
       graphql-depth-limit: 1.1.0_graphql@15.5.0
     devDependencies:
       '@types/graphql-depth-limit': 1.1.2
-      bob-esbuild-cli: 0.1.14_typescript@4.3.2
+      bob-esbuild-cli: 0.1.15_typescript@4.3.2
       graphql: 15.5.0
       typescript: 4.3.2
 
   packages/plugins/disable-introspection:
     specifiers:
-      bob-esbuild-cli: ^0.1.14
+      bob-esbuild-cli: ^0.1.15
       graphql: 15.5.0
       typescript: 4.3.2
     devDependencies:
-      bob-esbuild-cli: 0.1.14_typescript@4.3.2
+      bob-esbuild-cli: 0.1.15_typescript@4.3.2
       graphql: 15.5.0
       typescript: 4.3.2
 
   packages/plugins/extended-validation:
     specifiers:
-      bob-esbuild-cli: ^0.1.14
+      bob-esbuild-cli: ^0.1.15
       graphql: 15.5.0
       typescript: 4.3.2
     devDependencies:
-      bob-esbuild-cli: 0.1.14_typescript@4.3.2
+      bob-esbuild-cli: 0.1.15_typescript@4.3.2
       graphql: 15.5.0
       typescript: 4.3.2
 
   packages/plugins/filter-operation-type:
     specifiers:
-      bob-esbuild-cli: ^0.1.14
+      bob-esbuild-cli: ^0.1.15
       graphql: 15.5.0
       typescript: 4.3.2
     devDependencies:
-      bob-esbuild-cli: 0.1.14_typescript@4.3.2
+      bob-esbuild-cli: 0.1.15_typescript@4.3.2
       graphql: 15.5.0
       typescript: 4.3.2
 
   packages/plugins/generic-auth:
     specifiers:
-      bob-esbuild-cli: ^0.1.14
+      bob-esbuild-cli: ^0.1.15
       graphql: 15.5.0
       typescript: 4.3.2
     devDependencies:
-      bob-esbuild-cli: 0.1.14_typescript@4.3.2
+      bob-esbuild-cli: 0.1.15_typescript@4.3.2
       graphql: 15.5.0
       typescript: 4.3.2
 
   packages/plugins/graphql-jit:
     specifiers:
-      bob-esbuild-cli: ^0.1.14
+      bob-esbuild-cli: ^0.1.15
       graphql: 15.5.0
       graphql-jit: ^0.5.1
       reflect-metadata: 0.1.13
@@ -270,32 +270,32 @@ importers:
       graphql-jit: 0.5.1_graphql@15.5.0
       tiny-lru: 7.0.6
     devDependencies:
-      bob-esbuild-cli: 0.1.14_typescript@4.3.2
+      bob-esbuild-cli: 0.1.15_typescript@4.3.2
       graphql: 15.5.0
       reflect-metadata: 0.1.13
       typescript: 4.3.2
 
   packages/plugins/graphql-middleware:
     specifiers:
-      bob-esbuild-cli: ^0.1.14
+      bob-esbuild-cli: ^0.1.15
       graphql: 15.5.0
       graphql-middleware: 6.0.10
       typescript: 4.3.2
     devDependencies:
-      bob-esbuild-cli: 0.1.14_typescript@4.3.2
+      bob-esbuild-cli: 0.1.15_typescript@4.3.2
       graphql: 15.5.0
       graphql-middleware: 6.0.10_graphql@15.5.0
       typescript: 4.3.2
 
   packages/plugins/graphql-modules:
     specifiers:
-      bob-esbuild-cli: ^0.1.14
+      bob-esbuild-cli: ^0.1.15
       graphql: 15.5.0
       graphql-modules: 1.4.2
       reflect-metadata: 0.1.13
       typescript: 4.3.2
     devDependencies:
-      bob-esbuild-cli: 0.1.14_typescript@4.3.2
+      bob-esbuild-cli: 0.1.15_typescript@4.3.2
       graphql: 15.5.0
       graphql-modules: 1.4.2_graphql@15.5.0
       reflect-metadata: 0.1.13
@@ -305,62 +305,62 @@ importers:
     specifiers:
       '@opentelemetry/api': ^0.20.0
       '@opentelemetry/tracing': ^0.19.0
-      bob-esbuild-cli: ^0.1.14
+      bob-esbuild-cli: ^0.1.15
       graphql: 15.5.0
       typescript: 4.3.2
     dependencies:
       '@opentelemetry/api': 0.20.0
       '@opentelemetry/tracing': 0.19.0_@opentelemetry+api@0.20.0
     devDependencies:
-      bob-esbuild-cli: 0.1.14_typescript@4.3.2
+      bob-esbuild-cli: 0.1.15_typescript@4.3.2
       graphql: 15.5.0
       typescript: 4.3.2
 
   packages/plugins/parser-cache:
     specifiers:
-      bob-esbuild-cli: ^0.1.14
+      bob-esbuild-cli: ^0.1.15
       graphql: 15.5.0
       tiny-lru: 7.0.6
       typescript: 4.3.2
     dependencies:
       tiny-lru: 7.0.6
     devDependencies:
-      bob-esbuild-cli: 0.1.14_typescript@4.3.2
+      bob-esbuild-cli: 0.1.15_typescript@4.3.2
       graphql: 15.5.0
       typescript: 4.3.2
 
   packages/plugins/persisted-operations:
     specifiers:
       '@graphql-tools/schema': 7.1.5
-      bob-esbuild-cli: ^0.1.14
+      bob-esbuild-cli: ^0.1.15
       graphql: 15.5.0
       typescript: 4.3.2
     devDependencies:
       '@graphql-tools/schema': 7.1.5_graphql@15.5.0
-      bob-esbuild-cli: 0.1.14_typescript@4.3.2
+      bob-esbuild-cli: 0.1.15_typescript@4.3.2
       graphql: 15.5.0
       typescript: 4.3.2
 
   packages/plugins/preload-assets:
     specifiers:
-      bob-esbuild-cli: ^0.1.14
+      bob-esbuild-cli: ^0.1.15
       graphql: 15.5.0
       typescript: 4.3.2
     devDependencies:
-      bob-esbuild-cli: 0.1.14_typescript@4.3.2
+      bob-esbuild-cli: 0.1.15_typescript@4.3.2
       graphql: 15.5.0
       typescript: 4.3.2
 
   packages/plugins/rate-limiter:
     specifiers:
-      bob-esbuild-cli: ^0.1.14
+      bob-esbuild-cli: ^0.1.15
       graphql: 15.5.0
       graphql-rate-limit: 3.1.0
       typescript: 4.3.2
     dependencies:
       graphql-rate-limit: 3.1.0_graphql@15.5.0
     devDependencies:
-      bob-esbuild-cli: 0.1.14_typescript@4.3.2
+      bob-esbuild-cli: 0.1.15_typescript@4.3.2
       graphql: 15.5.0
       typescript: 4.3.2
 
@@ -368,48 +368,48 @@ importers:
     specifiers:
       '@sentry/node': 6.4.1
       '@sentry/tracing': 6.4.1
-      bob-esbuild-cli: ^0.1.14
+      bob-esbuild-cli: ^0.1.15
       graphql: 15.5.0
       typescript: 4.3.2
     devDependencies:
       '@sentry/node': 6.4.1
       '@sentry/tracing': 6.4.1
-      bob-esbuild-cli: 0.1.14_typescript@4.3.2
+      bob-esbuild-cli: 0.1.15_typescript@4.3.2
       graphql: 15.5.0
       typescript: 4.3.2
 
   packages/plugins/validation-cache:
     specifiers:
-      bob-esbuild-cli: ^0.1.14
+      bob-esbuild-cli: ^0.1.15
       graphql: 15.5.0
       tiny-lru: 7.0.6
       typescript: 4.3.2
     dependencies:
       tiny-lru: 7.0.6
     devDependencies:
-      bob-esbuild-cli: 0.1.14_typescript@4.3.2
+      bob-esbuild-cli: 0.1.15_typescript@4.3.2
       graphql: 15.5.0
       typescript: 4.3.2
 
   packages/testing:
     specifiers:
-      bob-esbuild-cli: ^0.1.14
+      bob-esbuild-cli: ^0.1.15
       graphql: 15.5.0
       graphql-helix: 1.6.1
       typescript: 4.3.2
     devDependencies:
-      bob-esbuild-cli: 0.1.14_typescript@4.3.2
+      bob-esbuild-cli: 0.1.15_typescript@4.3.2
       graphql: 15.5.0
       graphql-helix: 1.6.1_graphql@15.5.0
       typescript: 4.3.2
 
   packages/types:
     specifiers:
-      bob-esbuild-cli: ^0.1.14
+      bob-esbuild-cli: ^0.1.15
       graphql: 15.5.0
       typescript: 4.3.2
     devDependencies:
-      bob-esbuild-cli: 0.1.14_typescript@4.3.2
+      bob-esbuild-cli: 0.1.15_typescript@4.3.2
       graphql: 15.5.0
       typescript: 4.3.2
 
@@ -2782,8 +2782,8 @@ packages:
       readable-stream: 3.6.0
     dev: true
 
-  /bob-esbuild-cli/0.1.14_b89ec6c4eb73802631cbe54606dd8cdb:
-    resolution: {integrity: sha512-7vsowJhtXqwqiQB7Svyiu3wt+pz9mizKhntH83VQedfp73g97m76pEyyl4E8y8a/PxubQhpRWqh6xjZIAqVmKg==}
+  /bob-esbuild-cli/0.1.15_b89ec6c4eb73802631cbe54606dd8cdb:
+    resolution: {integrity: sha512-LpT9vy+vkvj5rRahOmMW6mkOU1EPyQG38xM1ZMxQq5aD8tS7hpN5AJImSOapXtmCrexeWhQm2BROz2RMDcnWbg==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
@@ -2792,15 +2792,15 @@ packages:
       '@oclif/errors': 1.3.4
       '@oclif/parser': 3.8.5
       '@oclif/plugin-help': 3.2.2
-      bob-esbuild: 0.1.11_b89ec6c4eb73802631cbe54606dd8cdb
+      bob-esbuild: 0.1.12_b89ec6c4eb73802631cbe54606dd8cdb
     transitivePeerDependencies:
       - '@types/node'
       - supports-color
       - typescript
     dev: true
 
-  /bob-esbuild-cli/0.1.14_typescript@4.3.2:
-    resolution: {integrity: sha512-7vsowJhtXqwqiQB7Svyiu3wt+pz9mizKhntH83VQedfp73g97m76pEyyl4E8y8a/PxubQhpRWqh6xjZIAqVmKg==}
+  /bob-esbuild-cli/0.1.15_typescript@4.3.2:
+    resolution: {integrity: sha512-LpT9vy+vkvj5rRahOmMW6mkOU1EPyQG38xM1ZMxQq5aD8tS7hpN5AJImSOapXtmCrexeWhQm2BROz2RMDcnWbg==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
@@ -2809,15 +2809,15 @@ packages:
       '@oclif/errors': 1.3.4
       '@oclif/parser': 3.8.5
       '@oclif/plugin-help': 3.2.2
-      bob-esbuild: 0.1.11_typescript@4.3.2
+      bob-esbuild: 0.1.12_typescript@4.3.2
     transitivePeerDependencies:
       - '@types/node'
       - supports-color
       - typescript
     dev: true
 
-  /bob-esbuild-plugin/0.1.0_@types+node@15.6.1+rollup@2.50.4:
-    resolution: {integrity: sha512-pJ9dixz1R+vvkBn4bZdY61T/D4HWXRIDCOM9YfoNwmQ7kgWPZ3XBQQl5Jj+vXYJ3DrmEm+DTC03r6tKUjG70eA==}
+  /bob-esbuild-plugin/0.1.1_@types+node@15.6.1+rollup@2.50.4:
+    resolution: {integrity: sha512-YYJ9ubTwOlzyyUSPDLjYbsYwdto2aSS5YAYIS71ffQXrTXWiHkZ/20QojC2fu0NRv8ClhIS1ZP5gGU4J/RNn6w==}
     peerDependencies:
       '@types/node': ^15.6.1
       rollup: ^2.50.3
@@ -2830,8 +2830,8 @@ packages:
       rollup: 2.50.4
     dev: true
 
-  /bob-esbuild-plugin/0.1.0_rollup@2.50.4:
-    resolution: {integrity: sha512-pJ9dixz1R+vvkBn4bZdY61T/D4HWXRIDCOM9YfoNwmQ7kgWPZ3XBQQl5Jj+vXYJ3DrmEm+DTC03r6tKUjG70eA==}
+  /bob-esbuild-plugin/0.1.1_rollup@2.50.4:
+    resolution: {integrity: sha512-YYJ9ubTwOlzyyUSPDLjYbsYwdto2aSS5YAYIS71ffQXrTXWiHkZ/20QojC2fu0NRv8ClhIS1ZP5gGU4J/RNn6w==}
     peerDependencies:
       '@types/node': ^15.6.1
       rollup: ^2.50.3
@@ -2843,12 +2843,12 @@ packages:
       rollup: 2.50.4
     dev: true
 
-  /bob-esbuild/0.1.11_b89ec6c4eb73802631cbe54606dd8cdb:
-    resolution: {integrity: sha512-kEHVi+aNDbj3mb63G8nRkHFpC+lDyeKA+qxSQUk6+KPmnBBV4qujRd+p6M5x8GAkYbaluE6qX8qkf71TKdfC8w==}
+  /bob-esbuild/0.1.12_b89ec6c4eb73802631cbe54606dd8cdb:
+    resolution: {integrity: sha512-LUeq32UgYCIZLGM68oLdx+Mui9l8GM57Lv3C0ho326axc+kZaRm/xg8Hhy9y0Nhdo2smGGIMwmsWSWwCuzYAfQ==}
     peerDependencies:
       typescript: ^4.3.2
     dependencies:
-      bob-esbuild-plugin: 0.1.0_@types+node@15.6.1+rollup@2.50.4
+      bob-esbuild-plugin: 0.1.1_@types+node@15.6.1+rollup@2.50.4
       builtin-modules: 3.2.0
       chalk: 4.1.1
       cosmiconfig: 7.0.0
@@ -2872,12 +2872,12 @@ packages:
       - supports-color
     dev: true
 
-  /bob-esbuild/0.1.11_typescript@4.3.2:
-    resolution: {integrity: sha512-kEHVi+aNDbj3mb63G8nRkHFpC+lDyeKA+qxSQUk6+KPmnBBV4qujRd+p6M5x8GAkYbaluE6qX8qkf71TKdfC8w==}
+  /bob-esbuild/0.1.12_typescript@4.3.2:
+    resolution: {integrity: sha512-LUeq32UgYCIZLGM68oLdx+Mui9l8GM57Lv3C0ho326axc+kZaRm/xg8Hhy9y0Nhdo2smGGIMwmsWSWwCuzYAfQ==}
     peerDependencies:
       typescript: ^4.3.2
     dependencies:
-      bob-esbuild-plugin: 0.1.0_rollup@2.50.4
+      bob-esbuild-plugin: 0.1.1_rollup@2.50.4
       builtin-modules: 3.2.0
       chalk: 4.1.1
       cosmiconfig: 7.0.0
