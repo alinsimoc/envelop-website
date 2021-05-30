@@ -2,11 +2,6 @@
   "private": true,
   "license": "MIT",
   "author": "Dotan Simha <dotansimha@gmail.com>",
-  "workspaces": [
-    "./packages/*",
-    "./packages/plugins/*",
-    "./examples/*"
-  ],
   "scripts": {
     "benchmark": "NODE_ENV=production ts-node --project tsconfig.benchmark.json benchmark/execute.case.ts",
     "build": "rimraf packages/*/lib packages/plugins/*/lib && bob-esbuild tsc && pnpm prepack -r",
